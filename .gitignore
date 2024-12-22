@@ -4,3 +4,4 @@ protofunctor.py
 __pycache__/
 .idea/
 .vscode/
+legacy/

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrofunc"
+version = "0.4.0"
+description = "A programmable pipeline library for Python."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{name = "Qc Pi", email = "qcpi@gmail.com"}]
+urls = {"Homepage" = "https://github.com/matthieupi/pyrofunc"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]

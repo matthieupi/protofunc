@@ -1,0 +1,11 @@
+# Server requirements
+Flask
+pydantic
+flasgger
+PyYAML
+pytest
+pytest-cov
+requests
+
+# AI requirements
+openai
