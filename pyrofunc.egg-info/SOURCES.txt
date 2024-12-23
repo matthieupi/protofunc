@@ -1,12 +1,10 @@
 LICENSE
 README.md
 pyproject.toml
-legacy/__init__.py
-legacy/protofunctor.py
-legacy/prototype.py
+pyrofunc.py
 pyrofunc.egg-info/PKG-INFO
 pyrofunc.egg-info/SOURCES.txt
 pyrofunc.egg-info/dependency_links.txt
 pyrofunc.egg-info/top_level.txt
-tests/test_pyrofunc.py
-tests/test_pyrofunc_gpt.py
+tests/test_protofunc.py
+tests/test_protofunc_gpt.py

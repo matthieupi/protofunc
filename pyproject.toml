@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrofunc"
-version = "0.4.0"
+version = "0.4.1"
 description = "A programmable pipeline library for Python."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [{name = "Qc Pi", email = "qcpi@gmail.com"}]
 urls = {"Homepage" = "https://github.com/matthieupi/pyrofunc"}

@@ -1,14 +1,14 @@
-# **Pytofunc: A Programmable Pipeline Library for Python**
+# **Pyrofunc: A Programmable Pipeline Library for Python**
 
-Welcome to **Pytofunc** – an innovative and flexible library for building composable and type-safe pipelines in Python. Inspired by functional programming paradigms, Pytofunc empowers developers to work with **Monads** and **Functors** to streamline complex workflows.
+Welcome to **Pyrofunc** – an innovative and flexible library for building composable and type-safe pipelines in Python. Inspired by functional programming paradigms, Pyrofunc empowers developers to work with **Monads** and **Functors** to streamline complex workflows.
 
-Whether you are dealing with data transformations, computational chains, or need a clean abstraction for sequential operations, Pytofunc helps you build expressive and modular code with ease.
+Whether you are dealing with data transformations, computational chains, or need a clean abstraction for sequential operations, Pyrofunc helps you build expressive and modular code with ease.
 
 ---
 
-## 🚀 **Why Pytofunc?**
+## 🚀 **Why Pyrofunc?**
 
-Python is powerful, but writing **complex chains of operations** often leads to messy and hard-to-read code. Pytofunc introduces **Monads** and **Functors** to provide:
+Python is powerful, but writing **complex chains of operations** often leads to messy and hard-to-read code. Pyrofunc introduces **Monads** and **Functors** to provide:
 
 - **Clean Composition**: Chain operations seamlessly with the `>>` and `|` operators.
 - **Readability**: Break down complex logic into small, reusable building blocks.
@@ -24,7 +24,7 @@ Python is powerful, but writing **complex chains of operations** often leads to 
 A `Monad` is a wrapper for values that supports clean chaining of operations. You can initialize a Monad and apply Functors without polluting your codebase.
 
 ```python
-from pytofunc import Monad
+from pyrofunc import Monad
 
 result = Monad(5) | Add(3) >> Multiply(2)
 print(result)  # Output: 16
@@ -36,7 +36,7 @@ print(result)  # Output: 16
 **Functors** represent single operations you can apply to a Monad. Write your own functors or use pre-built ones:
 
 ```python
-from pytofunc import functor
+from pyrofunc import functor
 
 @functor
 class Add:
@@ -60,7 +60,7 @@ print(m)  # Output: int(15)
 For operations that do not require initialization, **Static Functors** provide syntactic elegance:
 
 ```python
-from pytofunc import staticfunctor
+from pyrofunc import staticfunctor
 
 @staticfunctor
 class AddOne:
@@ -93,7 +93,7 @@ print(result)  # Output: 16
 Need insights into your pipeline execution? **MonadWithLogs** tracks operations and outputs logs.
 
 ```python
-from pytofunc import MonadWithLogs, extract_logs
+from pyrofunc import MonadWithLogs, extract_logs
 
 m = MonadWithLogs(5) | Add(3) >> Multiply(2)
 print(m)  # Output: 16
@@ -104,7 +104,7 @@ print(extract_logs(m))  # Logs: ["Add(8)", "Multiply(16)"]
 
 ### 6. **Improved Error Handling**
 
-Pytofunc now provides:
+Pyrofunc now provides:
 
 - Detailed error feedback for invalid types or missing annotations in pipelines.
 - Graceful handling of dynamic typing mismatches, with meaningful error messages.
@@ -164,20 +164,20 @@ Users will be able to define specialized Monads like `Either` or `Maybe` for err
 
 ## 📥 **Installation**
 
-Install Pytofunc using pip:
+Install Pyrofunc using pip:
 
 ```bash
-pip install pytofunc
+pip install pyrofunc
 ```
 
 ---
 
 ## 👩‍💻 **Getting Started**
 
-Here is an end-to-end example showcasing Pytofunc's power:
+Here is an end-to-end example showcasing Pyrofunc's power:
 
 ```python
-from pytofunc import Monad, MonadWithLogs, functor, staticfunctor, extract_logs
+from pyrofunc import Monad, MonadWithLogs, functor, staticfunctor, extract_logs
 
 @functor
 class Add:
@@ -226,7 +226,7 @@ This project is licensed under the MIT License.
 
 ## 🌟 **Conclusion**
 
-With Pytofunc, you can write **readable, modular, and functional pipelines** that simplify your code and supercharge your workflows. Whether you're working on data pipelines, mathematical computations, or debugging, Pytofunc gives you the power of functional programming without the complexity.
+With Pyrofunc, you can write **readable, modular, and functional pipelines** that simplify your code and supercharge your workflows. Whether you're working on data pipelines, mathematical computations, or debugging, Pyrofunc gives you the power of functional programming without the complexity.
 
-Give Pytofunc a try, and take your Python code to the next level! 🚀
+Give Pyrofunc a try, and take your Python code to the next level! 🚀
 

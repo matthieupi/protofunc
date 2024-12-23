@@ -1,6 +1,6 @@
 import pytest
 from typing import List, Any
-from functors.pytofunc import Monad, Functor, functor, staticfunctor, MonadWithLogs, extract_logs
+from protofunc import Monad, Functor, functor, staticfunctor, MonadWithLogs, extract_logs
 
 
 # Define test Functors
